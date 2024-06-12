@@ -1,1 +1,12 @@
-<h1>About</h1>
+<div>
+    <header>
+        <h1>About<h1>
+    </header>
+
+    <% if flash[:notice] %>
+        <div class="alert-notification notice">
+            <%= flash[:notice] %>
+        </div>
+    <% end %>
+    
+</div>

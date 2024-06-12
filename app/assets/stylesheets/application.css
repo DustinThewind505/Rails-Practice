@@ -27,3 +27,21 @@
     display: flex;
     justify-content: space-evenly;
  }
+
+ .alert-notification {
+   border-radius: .5rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.3rem;
+   font-weight: bold;
+   margin: 0 auto;
+   padding: 1rem;
+   width: 80%;
+ }
+
+ .alert {
+   background-color: lightcoral;
+ }
+
+ .notice {
+   background-color: lightskyblue;
+ }
