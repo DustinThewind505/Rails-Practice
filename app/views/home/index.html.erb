@@ -3,6 +3,10 @@
         <h1>Home<h1>
     </header>
 
+    <% if flash[:notice] %>
+        <p class="alert-notification alert"> <%= flash[:notice] %></p>
+    <% end %>
+
     <% if @user %>
       <p class="home-page-greeting">Welcome <%= @user.email %></p>
     <% end %>

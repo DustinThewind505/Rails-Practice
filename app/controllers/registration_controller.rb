@@ -11,9 +11,9 @@ class RegistrationController < ApplicationController
 
         if @user.save
             session[:user_id] = @user.id
-            redirect_to about_url, notice: "Success"
+            redirect_to "/", notice: "Successfully logged in"
         else
-            puts "ERRRORRRRSSSS #{@user.errors.full_messages} **************"
+            render :new
         end
 
     end

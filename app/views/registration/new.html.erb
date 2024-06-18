@@ -1,14 +1,9 @@
 <h1>Registration</h1>
 
-<%= form_with model: @user, url: sign_up_url, html: {class: "registration-sign-up-form"} do |form| %>
+<%= form_with model: @user, url: sign_up_url, data: { turbo: false }, html: {class: "registration-sign-up-form"} do |form| %>
     <% if @user.errors.any? %>
-        <div>
-            <% @user.errors.full_messages.each do |message| %>
-                <p><%= message %></p>
-            <% end %>
-        </div>
+        <p><%= @user.errors.full_messages %></p>
     <% end %>
-    <p><%= @user.errors.full_messages %></p>
     <p>Sign up form</p>
     <div>
         <%= form.label :email %>
