@@ -15,33 +15,62 @@
  */
 
 
- h1 {
-    text-align: center;
- }
+h1 {
+  text-align: center;
+}
 
- nav {
-    background-color: aqua;
- }
+nav {
+  background-color: aqua;
+}
 
- ul {
-    display: flex;
-    justify-content: space-evenly;
- }
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
 
- .alert-notification {
-   border-radius: .5rem;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.3rem;
-   font-weight: bold;
-   margin: 0 auto;
-   padding: 1rem;
-   width: 80%;
- }
+.alert-notification {
+  border-radius: .5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 80%;
+}
 
- .alert {
-   background-color: lightcoral;
- }
+.alert {
+  background-color: lightcoral;
+}
 
- .notice {
-   background-color: lightskyblue;
- }
+.notice {
+  background-color: lightskyblue;
+}
+
+.registration-sign-up-form {
+  background-color: aqua;
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-sign-up-form p {
+  font-size: 1.5rem;
+}
+
+.registration-sign-up-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-sign-up-form div:last-of-type {
+  margin-bottom: .5rem;
+}
+
+.home-page-greeting {
+  background-color: lightsteelblue;
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
