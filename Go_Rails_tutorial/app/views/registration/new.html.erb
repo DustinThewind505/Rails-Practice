@@ -1,8 +1,8 @@
-<h1>Registration</h1>
+<h1>Sign Up</h1>
 
 <%= form_with model: @user, url: sign_up_url, data: { turbo: false }, html: {class: "registration-sign-up-form"} do |form| %>
     <% if @user.errors.any? %>
-        <p><%= @user.errors.full_messages %></p>
+        <p class="alert"><%= @user.errors.full_messages %></p>
     <% end %>
     <p>Sign up form</p>
     <div>

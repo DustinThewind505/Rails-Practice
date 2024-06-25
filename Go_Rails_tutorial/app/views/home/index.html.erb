@@ -1,0 +1,17 @@
+<div>
+    <header>
+        <h1>Home<h1>
+    </header>
+
+    <% if flash[:notice] %>
+        <p class="alert-notification notice"> <%= flash[:notice] %></p>
+    <% end %>
+
+    <% if @user %>
+        <p class="home-page-greeting">Welcome <%= @user.email %></p>
+        <%= button_to "Logout", logout_path, method: :delete %>
+    <% else %>
+        <%= link_to "Login", sign_in_path %>
+    <% end %>
+
+</div>
