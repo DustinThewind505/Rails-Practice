@@ -1,0 +1,24 @@
+<h1>Create new article</h1>
+
+<% if @article.errors.any? %>
+    <ul>there was an error submitting your article
+        <% @article.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+        <% end %>
+    </ul>
+<% end %>
+
+<%= form_with scope: :article, url: articles_path, local: true, data: { turbo: false } do |form| %>
+
+    <p>
+        <%= form.label :title %></br>
+        <%= form.text_field :title %>
+    </p>
+
+    <p>
+        <%= form.label :description %></br>
+        <%= form.text_area :description %>
+    </p>
+
+    <%= form.submit %>
+<% end %>
